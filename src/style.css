@@ -369,6 +369,7 @@ a {
 	}
 	.about__descr {
 		flex-direction: column;
+		align-items: center;
 	}
 	.btn::after {
 		display: none;
