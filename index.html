@@ -25,13 +25,13 @@
 					<nav class="header__menu menu">
 						<ul class="menu__list">
 							<li>
-								<a class="menu__link" href="#">Програма</a>
+								<a class="menu__link" href="#" data-scroll="#program">Програма</a>
 							</li>
 							<li>
-								<a class="menu__link" href="#">Подарунки</a>
+								<a class="menu__link" href="#" data-scroll="#gifts">Подарунки</a>
 							</li>
 							<li>
-								<a class="menu__link" href="#">Реєстрація</a>
+								<a class="menu__link" href="#" data-scroll="#singup">Реєстрація</a>
 							</li>
 						</ul>
 					</nav>
@@ -65,7 +65,7 @@
 								</li>
 							</ul>
 							<div class="about__descr">
-								<a href="#" class="about__btn btn">
+								<a href="#" class="about__btn btn" data-scroll="#singup">
 									Записатись на вебінар
 								</a>
 								<div class="about__date-and-time">
@@ -86,8 +86,65 @@
 						</div>
 					</div>
 			</div>
+			
+			<!-- Useful -->
+			<div class="useful">
+				<div class="container">
+					<h3 class="useful__titel title">Для кого буде корисно</h3>
+					<div class="useful__peoples-container">
+						<div class="useful__item people people--first">
+							<img src="src/img/people-1.png" alt="" class="people__img">
+							<p class="people__text">ІТ директорам</p>
+						</div>
+						<div class="useful__item people people--second">
+							<img src="src/img/people-2.png" alt="" class="people__img">
+							<p class="people__text">Адміністраторам мереж</p>
+						</div>
+						<div class="useful__item people people--third">
+							<img src="src/img/people-3.png" alt="" class="people__img">
+							<p class="people__text">Спеціалістам з кібер безпеки</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- gifts -->
+			<div class="gifts" id="gifts">
+				<div class="container">
+					<div class="gifts__body">
+						<div class="gifts__left-side">
+							<h3 class="gifts__title title">
+								Подарунки для активних
+							</h3>
+							<p class="gifts__text">
+								Чесний розіграш сувенірів серед активних слухачів під час вебінару. 
+							</p>
+							<p class="gifts__text">
+								Ми перевіримо вашу уважність і розіграємо подарункові сертифікати від Fortinet та MUK 
+							</p>
+						</div>
+						<div class="gifts__right-side">
+							<div class="gifts__timer">
+								<p class="gifts__timer-title">
+									До початку 
+								</p>
+								<div class="gifts__timer-num">
+									<div class="gifts__timer-num-item gifs__timer-num-item-days" id="d"></div>
+									<div>:</div> |
+									<div class="gifts__timer-num-item gifts__timer-num-item-hours" id="h"></div>
+									<div>:</div> |
+									<div class="gifts__timer-num-item gifts__timer-num-item-minutes" id="m"></div>
+								</div>
+								<a class="gifts__btn btn" href="#" data-scroll="#singup">Записатись на вебінар</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</main>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -383,24 +383,231 @@ a {
 	}
 }      
 
-/* .about__right-side {
-	position: absolute;
-	top: 0;
-	right: 0;
-	max-width: 944px;
-	height: 795px;
-	width: 100%;
-	background: url("img/baner-1.png") 100% 100% / cover no-repeat;
 
+/* useful */
+
+
+.useful {
+	padding-bottom: 144px;
 }
-.about__right-side::after {
+.title {
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 61px;
+	color: #000000;
+}
+.useful__peoples-container {
+	max-width: 1284px;
+	width: 100%;
+	margin: 70px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+.people {
+	position: relative;
+	max-width: 328px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 30px 24px;
+	border: 1px solid #307FE2;
+	
+}
+.people--first {
+	border-radius: 25% 0 0 0;
+}
+.people--first::after {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 198px;
-	height: 315px;
-	bottom: -76px;
-	left: -118px;
-	background: url("img/baner-item.png") 100% 100% / cover no-repeat;
+	top: 40px;
+	right: -40px;
+	width: 64px;
+	height: 40px;
+	background-image: url("img/people-element-1.png");  
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.people--second::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 7px;
+	left: -48px;
+	width: 116px;
+	height: 11px;
+	background: rgba(48, 127, 226, 0.7);
+}
+.people--third {
+	border-radius: 0 25% 0 0;
+}
+.people--third::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -16px;
+	left: -25px;
+	width: 57px;
+	height: 32px;
+	background-image: url("img/people-element-3.png");  
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.people__img {
+	max-width: 143px;
+	width: 100%;
+	margin-bottom: 14px;
+}
+.people__text {
+	font-weight: 500;
+	font-size: 23px;
+	line-height: 28px;
+}
+@media (max-width: 1200px) {
+	.useful {
+		padding-bottom: 97px;
+	}
+	.title {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.useful__peoples-container {
+		max-width: 1050px;
+	}
+	.people {
+		max-width: 240px;
+		padding: 30px 24px;
+	}
+	.people--second::after {
+		width: 90px;
+		height: 7px;
+	}
+	.people__img {
+		max-width: 96px;
+	}
+	.people__text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+@media (max-width: 960px) {
+	.useful {
+		padding-bottom: 77px;
+	}
+	.useful__peoples-container {
+		max-width: 866px;
+		margin-top: 50px;
+	}
+	.people {
+		max-width: 200px;
+		padding: 20px 17px;
+	}
+	.people--first::after {
+		right: -12px;
+		width: 35px;
+		height: 24px; 
+	}
+	.people--second::after {
+		width: 42px;
+		height: 4px; 
+		left: -16px;
+	}
+	.people--third::after {
+		width: 44px;
+		height: 24px; 
+		left: -15px;
+		top: -12px;
+	}
+	.people__img {
+		max-width: 64px;
+	}
+	.people__text {
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+@media (max-width: 767px) {
+	.useful {
+		padding-bottom: 50px;
+	}
+	.useful__peoples-container {
+		max-width: none;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 45px;
+	}
+	.title {
+		text-align: center;
+	}
+	.people {
+		max-width: 270px;
+		padding: 30px 22px;
+		margin-bottom: 25px;
+	}
+	.people:last-child {
+		margin-bottom: 0;
+	}
+	.people--first::after {
+		right: -16px;
+		width: 64px;
+		height: 39px; 
+	}
+	.people--second::after {
+		width: 94px;
+		height: 7px; 
+		left: -28px;
+	}
+	.people--third::after {
+		width: 57px;
+		height: 32px; 
+		left: -23px;
+		top: calc(50% - 16px);
+	}
+	.people__img {
+		max-width: 96px;
+	}
+	.people__text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
 
-} */
+/* gifts */
+
+.gifts {
+	padding: 86px 0 96px;
+	background-image: url("img/gifts-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #ffff;
+}
+.gifts__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.gifts__left-side {
+	margin-right: 30px;
+}
+.gifts__title {
+	color: #ffff;
+	margin-bottom: 20px;
+}
+.gifts__text {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 32px;
+}
+.gifts__text:last-child {
+	margin-bottom: 0;
+}
+.gifts__timer-title {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
