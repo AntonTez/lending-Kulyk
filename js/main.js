@@ -9,7 +9,6 @@ window.onload = function() {
 		aboutLeftSide.style.marginLeft = `${calc}px`;
 		// console.log(windowWidth, containerWidth, calc);
 	}
-	
 };
 
 var accordion = function (){
@@ -88,10 +87,12 @@ $(document).ready(function(){
 		//alert("Hello2");
 		
 		
-					document.getElementById("d").innerHTML = parseInt(days, 10) + " днів";
-					document.getElementById("h").innerHTML = ("0" + hours).slice(-2) + " годин";
-					document.getElementById("m").innerHTML = ("0" + minutes).slice(-2) + " хвилин";
-					// document.getElementById("s").innerHTML = ("0" + seconds).slice(-2);
+					// document.getElementById("d").innerHTML = parseInt(days, 10) + " днів";
+					// document.getElementById("h").innerHTML = ("0" + hours).slice(-2) + " годин";
+					// document.getElementById("m").innerHTML = ("0" + minutes).slice(-2) + " хвилин";
+					
+					let timers = document.querySelectorAll('.timer__num');
+					timers.forEach(el => el.innerHTML = `${parseInt(days, 10)} днів | ${("0" + hours).slice(-2)} год | ${("0" + minutes).slice(-2)} хв`);
 				} else {
 			
 		 // alert("Hello3");
