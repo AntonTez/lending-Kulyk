@@ -106,7 +106,7 @@ $(document).ready(function(){
 		
 		
 		
-		countdown (1658068638000);
+		countdown (1658552400000);
 
 });
 

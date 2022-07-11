@@ -35,7 +35,7 @@
 								<a class="menu__link" href="#" data-scroll="#gifts">Подарунки</a>
 							</li>
 							<li>
-								<a class="menu__link" href="#" data-scroll="#singup">Реєстрація</a>
+								<a class="menu__link" href="#" data-scroll="#signup">Реєстрація</a>
 							</li>
 						</ul>
 					</nav>
@@ -69,7 +69,7 @@
 							</li>
 						</ul>
 						<div class="about__descr">
-							<a href="#" class="about__btn btn" data-scroll="#singup">
+							<a href="#" class="about__btn btn" data-scroll="#signup">
 								Записатись на вебінар
 							</a>
 							<div class="about__date-and-time">
@@ -138,7 +138,7 @@
 								<div>|</div>
 								<div class="gifts__timer-num-item gifts__timer-num-item-minutes" id="m"></div> -->
 							</div>
-							<a class="gifts__btn btn" href="#" data-scroll="#singup">Записатись на вебінар</a>
+							<a class="gifts__btn btn" href="#" data-scroll="#signup">Записатись на вебінар</a>
 						</div>
 					</div>
 				</div>
@@ -217,24 +217,24 @@
 							<form action="" method="POST" class="registration__form form">
 								<p class="form__input-container">
 									<label class="form__label" for="first-name">Ім’я</label>
-									<input type="text" name="first-name" id="first-name" placeholder="Ім’я " class="form__input">
+									<input type="text" name="first-name" id="first-name" placeholder="Ім’я " class="form__input" required>
 								</p>
 								<p class="form__input-container">
 									<label class="form__label" for="last-name">Прізвище</label>
-									<input type="text" name="last-name" id="last-name" placeholder="Прізвище" class="form__input">
+									<input type="text" name="last-name" id="last-name" placeholder="Прізвище" class="form__input" required>
 								</p>
 								<p class="form__input-container">
 									<label class="form__label" for="company">Компанія</label>
-									<input type="text" name="company" id="company" placeholder="Компанія" class="form__input">
+									<input type="text" name="company" id="company" placeholder="Компанія" class="form__input" required>
 								</p>
 								<p class="form__input-container">
 									<label class="form__label" for="email">Email</label>
-									<input type="email" name="email" id="email" placeholder="Email" class="form__input">
+									<input type="email" name="email" id="email" placeholder="Email" class="form__input" required>
 								</p>
 								<label class="form__checkbox-label">
-									<span class="form__checkbox-custom"></span>
 									<input type="checkbox" name="check" checked="checked" required class="form__checkbox-input">
-									<span class="form__chebox-text">Погоджуюсь з <a href="https://muk.ua/company/soglasie.php" target="_blank">політикою конфіденційності</a></span> 
+									<span class="form__checkbox-custom"></span>
+									<span class="form__chebox-text">Погоджуюсь з <a class="privacy-policy" href="https://muk.ua/company/soglasie.php" target="_blank">політикою конфіденційності</a></span> 
 								</label>
 								<button class="form__btn btn">
 									Записатись на вебінар
@@ -242,11 +242,11 @@
 							</form>
 							<div class="registrarion__text-block">
 								<p class="registration__text">
-									Заповнюючи наведену форму, ви погоджуєтеся з <a href="https://muk.ua/company/soglasie.php" target="_blank">політикою конфіденційності</a> та надаєте свою згоду на обробку зазначених у ній персональних даних групі компаній «МУК» з метою інформування про діяльність і новини Компанії, в тому числі за допомогою поштових (по електронній пошті) повідомлень рекламного змісту, інформаційних і новинних розсилок, запрошень на заходи та іншої інформації рекламно-новинного змісту.
+									Заповнюючи наведену форму, ви погоджуєтеся з <a class="privacy-policy" href="https://muk.ua/company/soglasie.php" target="_blank">політикою конфіденційності</a> та надаєте свою згоду на обробку зазначених у ній персональних даних групі компаній «МУК» з метою інформування про діяльність і новини Компанії, в тому числі за допомогою поштових (по електронній пошті) повідомлень рекламного змісту, інформаційних і новинних розсилок, запрошень на заходи та іншої інформації рекламно-новинного змісту.
 								</p>
 								<div class="registration__timer timer">
 									<p class="timer__title">
-										До початку
+										До початку:
 									</p>
 									<div class="timer__num">
 									</div>
@@ -257,7 +257,53 @@
 				</div>
 			</section>
 
+			<section class="questions">
+				<div class="container">
+					<h3 class="questions__title title">
+						Поширені запитання
+					</h3>
+					<ul class="questions__accordion accordion" data-accordion="open">
+						<li>
+							<div class="accordion__header">
+								Як потрапити на вебінар?
+							</div>
+							<div class="accordion__body">
+								Достатньо заповнити реєстраційну форму та отримати на вказаний імейл лист з посиланням. Перевірте вхідні повідомлення або спам (іноді помилково лист може туди потрапити).
+							</div>
+						</li>
+						<li>
+							<div class="accordion__header">
+								Треба встановлювати додаткове ПЗ?
+							</div>
+							<div class="accordion__body">
+								В цьому нема потреби. Брати участь у вебінарі можна прямо в браузері.
+							</div>
+						</li>
+						<li>
+							<div class="accordion__header">
+								Як не пропустити вебінар?
+							</div>
+							<div class="accordion__body">
+								Додайте нагадування собі в календар - так надійніше))
+							</div>
+						</li>
+						<li>
+							<div class="accordion__header">
+								Як отримати запис і слайди?
+							</div>
+							<div class="accordion__body">
+								Презентація та запис вебінару буде відправлена усім зареєстрованим учасникам. Слідкуйте за нашими розсилками!
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
 		</main>
+
+		<footer class="footer">
+			© muk.ua, 2022
+		</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
