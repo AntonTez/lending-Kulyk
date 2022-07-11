@@ -25,7 +25,7 @@ var accordion = function (){
 					}
 			}
 			else{
-					$(this).toggleClass('active')
+					$(this).toggleClass('active');
 			}
 			$(this).next('.accordion__body').not(':animated').slideToggle();
 	});
@@ -41,13 +41,14 @@ $(document).ready(function(){
 
 
 			$("html, body").animate({
-					scrollTop: elementOffset - 70
+					// scrollTop: elementOffset - 70
+					scrollTop: elementOffset - document.querySelector('.container').offsetHeight - 50
 			}, 700);
 	});
 
 	$('.burger').on('click' , function () {
-			$(this).toggleClass('active')
-			$('.nav').toggleClass('active')
+			$(this).toggleClass('active');
+			$('.nav').toggleClass('active');
 	});
 	
 
